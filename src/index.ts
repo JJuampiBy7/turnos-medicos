@@ -1,5 +1,5 @@
-import { configuracionAgenda } from "./resources.ts";
-import { arrayProfesionales, arrayEspecialidades } from "./resources.ts"; 
+import { configuracionAgenda } from "./resources.js";
+import { arrayProfesionales, arrayEspecialidades } from "./resources.js"; 
 
 console.clear()
 console.log('CONFIGURACION')

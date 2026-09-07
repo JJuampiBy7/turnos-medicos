@@ -4,6 +4,7 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "module": "nodenext",
+    "moduleResolution": "NodeNext",
     "target": "esnext",
     "lib": ["esnext"],
     "types": ["node"],
@@ -16,8 +17,7 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
+    
   },
   "include": ["src/**/*"]
 }
