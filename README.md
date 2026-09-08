@@ -1,36 +1,61 @@
-# TurnosMed - Backend
+# TurnosMed
 
-Backend prototipo desarrollado para la centralización y gestión de turnos médicos en un centro de atención de la salud. Proyecto correspondiente a la **Actividad 1 de Integraciones Web (TecLab)**.
+Backend prototipo desarrollado en **Node.js + TypeScript + Express** para centralizar la gestión de turnos de un centro médico. Permite administrar especialidades y profesionales de la salud mediante una API REST, con persistencia inicial en archivos JSON.
 
-## 📋 Descripción del Proyecto
+## Tecnologías
 
-`TurnosMed` establece las bases del servidor backend para gestionar la agenda médica de la institución. Las reglas operativas fijadas atienden solicitudes de lunes a viernes en el rango horario de **07:00 hs a 13:00 hs**, organizando la atención en turnos de 30 minutos.
+- Node.js
+- TypeScript
+- Express
+- Persistencia en archivos JSON (`node:fs/promises`)
 
-En esta primera etapa de desarrollo, el sistema cuenta con:
-- Persistencia inicial mock interactuando mediante archivos JSON.
-- Definición e implementación de interfaces estrictas en TypeScript para las entidades del dominio y reglas de negocio de la agenda.
-- Integración de lectura asíncrona de datos con módulos nativos de Node.js.
+## Estructura del proyecto
 
----
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Node.js** (Entorno de ejecución / Runtime)
-- **TypeScript** (Lenguaje principal para tipado estático)
-- **Express.js** (Framework de servidor web)
-- **node:fs/promises** (Módulo nativo para lectura/escritura asíncrona de archivos)
-
----
-
-## 📁 Estructura del Proyecto
-
-```text
+```
 turnos-medicos/
 ├── src/
 │   ├── data/
 │   │   ├── especialidades.json
 │   │   └── profesionales.json
-│   └── index.ts
+│   ├── resources.ts     # Lectura de datos y configuración de agenda
+│   └── index.ts         # Servidor Express, rutas y middleware
 ├── package.json
 ├── tsconfig.json
 └── README.md
+```
+
+## Instalación
+
+```bash
+npm install
+```
+
+## Ejecución
+
+```bash
+npm run build   # Compila TypeScript a dist/
+npm start       # Levanta el servidor en http://localhost:3000
+```
+
+## Endpoints disponibles
+
+### Especialidades
+
+| Método | Ruta                    | Descripción                                       |
+|--------|-------------------------|----------------------------------------------------|
+| GET    | `/especialidades`       | Lista todas las especialidades                     |
+| GET    | `/especialidades/:id`   | Busca una especialidad por `especialidadId`        |
+| POST   | `/especialidades`       | Crea una nueva especialidad                        |
+| DELETE | `/especialidades/:id`   | Baja lógica (`activa: false`)                      |
+
+### Profesionales médicos
+
+| Método | Ruta                    | Descripción                                                |
+|--------|-------------------------|-------------------------------------------------------------|
+| GET    | `/profesionales`        | Lista todos los profesionales                                |
+| GET    | `/profesionales/:id`    | Busca un profesional por `medicoId`                          |
+| POST   | `/profesionales`        | Registra un profesional (valida especialidad existente)      |
+| PUT    | `/profesionales/:id`    | Actualiza completamente los datos de un profesional          |
+| DELETE | `/profesionales/:id`    | Baja lógica (`activo: false`)                                |
+
+Cualquier otra ruta o método no contemplado devuelve un `404` con un mensaje JSON explicativo.
