@@ -7,8 +7,8 @@ const rutaEspecialidades = path.resolve('src','data','especialidades.json')
 const dataProfesionales = await fs.readFile(rutaProfesionales, 'utf-8');
 const dataEspecialidades = await fs.readFile(rutaEspecialidades, 'utf-8');
 
-export const arrayProfesionales = JSON.parse(dataProfesionales)
-export const arrayEspecialidades = JSON.parse(dataEspecialidades)
+export const arrayProfesionales: Profesional[] = JSON.parse(dataProfesionales);
+export const arrayEspecialidades: Especialidad[] = JSON.parse(dataEspecialidades);
 
 interface Parametria {
     fechaMaxima: string;
