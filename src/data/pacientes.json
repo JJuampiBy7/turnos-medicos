@@ -1,0 +1,7 @@
+[
+  { "codigoPaciente": 1, "nombreCompleto": "Lucía Gómez", "documento": "40123456", "fechaNacimiento": "1995-04-12", "email": "lucia.gomez@mail.com", "telefono": "+54 9 11 5555-1234", "coberturaSalud": "OSDE" },
+  { "codigoPaciente": 2, "nombreCompleto": "Martín Alvarez", "documento": "38456789", "fechaNacimiento": "1990-07-23", "email": "martin.alvarez@mail.com", "telefono": "+54 9 11 5555-2345", "coberturaSalud": "Swiss Medical" },
+  { "codigoPaciente": 3, "nombreCompleto": "Sofía Ramírez", "documento": "42567890", "fechaNacimiento": "1998-01-30", "email": "sofia.ramirez@mail.com", "telefono": "+54 9 11 5555-3456", "coberturaSalud": "IOMA" },
+  { "codigoPaciente": 4, "nombreCompleto": "Nicolás Gómez", "documento": "35678901", "fechaNacimiento": "1985-11-05", "email": "nicolas.gomez@mail.com", "telefono": "+54 9 11 5555-4567", "coberturaSalud": "PAMI" },
+  { "codigoPaciente": 5, "nombreCompleto": "Valentina Rossi", "documento": "44789012", "fechaNacimiento": "2001-09-18", "email": "valentina.rossi@mail.com", "telefono": "+54 9 11 5555-5678", "coberturaSalud": "Particular" }
+]

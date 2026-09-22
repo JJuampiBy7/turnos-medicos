@@ -1,0 +1,6 @@
+[
+  { "estadoId": 1, "nombreEstado": "Pendiente", "activo": true },
+  { "estadoId": 2, "nombreEstado": "Confirmado", "activo": true },
+  { "estadoId": 3, "nombreEstado": "Cancelado", "activo": true },
+  { "estadoId": 4, "nombreEstado": "Completado", "activo": true }
+]

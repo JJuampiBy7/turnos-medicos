@@ -1,4 +1,4 @@
-# TurnosMed
+## TurnosMed
 
 Backend prototipo desarrollado en **Node.js + TypeScript + Express** para centralizar la gestión de turnos de un centro médico. Permite administrar especialidades y profesionales de la salud mediante una API REST, con persistencia inicial en archivos JSON.
 
@@ -73,6 +73,9 @@ npm start       # Levanta el servidor en http://localhost:3000
 | GET    | `/`                                     | `bienvenida`        | Endpoint de bienvenida a la API        |
 | *      | Cualquier ruta/método no contemplado   | `rutaNoEncontrada`  | Middleware 404 global                  |
 
+## Pruebas
+
+La colección de Postman **TurnosMed API**, con los casos happy path y unhappy path de cada endpoint, se encuentra documentada en el Documento de Evidencias entregado junto con este repositorio.
 
 ## Autor
 

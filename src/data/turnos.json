@@ -1,0 +1,7 @@
+[
+  { "codigoTurno": 1, "fecha": "2026-10-05", "hora": "09:00", "especialidad": "Cardiología", "profesional": "Dr. Martín Alvarez", "nombrePaciente": "Lucía Gómez", "estadoTurno": "Pendiente" },
+  { "codigoTurno": 2, "fecha": "2026-10-05", "hora": "10:30", "especialidad": "Pediatría", "profesional": "Dr. Nicolás Gómez", "nombrePaciente": "Valentina Rossi", "estadoTurno": "Confirmado" },
+  { "codigoTurno": 3, "fecha": "2026-10-06", "hora": "08:30", "especialidad": "Dermatología", "profesional": "Dra. Lucía Fernández", "nombrePaciente": "Sofía Ramírez", "estadoTurno": "Pendiente" },
+  { "codigoTurno": 4, "fecha": "2026-10-07", "hora": "11:00", "especialidad": "Traumatología", "profesional": "Dr. Federico Suárez", "nombrePaciente": "Martín Alvarez", "estadoTurno": "Cancelado" },
+  { "codigoTurno": 5, "fecha": "2026-10-08", "hora": "07:30", "especialidad": "Ginecología", "profesional": "Dra. Valentina Rossi", "nombrePaciente": "Lucía Gómez", "estadoTurno": "Completado" }
+]
